@@ -1,0 +1,47 @@
+/* ── 포켓몬 샵 통합 디자인 토큰 ── */
+:root {
+  /* Brand colors */
+  --pk-red: #CC0000;
+  --pk-red-bright: #e63946;
+  --pk-red-deep: #c1121f;
+  --pk-red-dark: #a30000;
+  --pk-yellow: #FFCB05;
+  --pk-yellow-dark: #e6b800;
+  --pk-navy: #1a1a3e;
+  --pk-navy-mid: #252550;
+  --pk-navy-deep: #0f0f2e;
+  --pk-blue: #3B4CCA;
+  --pk-white: #ffffff;
+
+  /* Surfaces */
+  --page-bg: linear-gradient(160deg, var(--pk-navy) 0%, #1e1e4a 55%, var(--pk-navy-deep) 100%);
+  --hero-bg: linear-gradient(135deg, var(--pk-red-deep) 0%, var(--pk-red-bright) 55%, #ff6b6b 100%);
+  --card-header-bg: linear-gradient(135deg, var(--pk-red) 0%, var(--pk-red-bright) 100%);
+  --content-surface: #eef1f7;
+  --card-bg: #ffffff;
+  --nav-bg: rgba(26, 26, 62, 0.88);
+
+  /* Text — dark backgrounds */
+  --text-on-page: #ffffff;
+  --text-on-page-muted: rgba(255, 255, 255, 0.78);
+  --text-on-page-subtle: rgba(255, 255, 255, 0.55);
+
+  /* Text — light surfaces */
+  --text-on-card: #111827;
+  --text-on-card-secondary: #374151;
+  --text-on-card-muted: #6b7280;
+
+  /* Accents */
+  --text-accent: var(--pk-red-bright);
+  --text-highlight: var(--pk-yellow);
+  --pk-border: #e0e0e0;
+  --pk-gray: #f5f5f5;
+  --pk-text: #2c2c3e;
+  --pk-text-light: #6b6b80;
+  --pk-error: #e53e3e;
+  --pk-success: #38a169;
+
+  /* Shadows & decor */
+  --shadow-card: 0 25px 60px rgba(0, 0, 0, 0.45);
+  --float-ball-border: rgba(255, 255, 255, 0.045);
+}
