@@ -1,0 +1,47 @@
+{
+  "name": "vibe-coding-study-shopping-pokemon-api",
+  "description": "Pokemon shopping mall — Express/MongoDB API (monorepo server)",
+  "repository": "https://github.com/BaekyoungL/vibe-coding-study-shopping_pokemon",
+  "keywords": ["node", "express", "mongodb", "shopping-mall"],
+  "stack": "heroku-24",
+  "buildpacks": [
+    {
+      "url": "https://github.com/timanovsky/subdir-heroku-buildpack"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "PROJECT_PATH": {
+      "description": "Monorepo 내 Heroku 앱 루트 (server 폴더)",
+      "value": "server",
+      "required": true
+    },
+    "NODE_ENV": {
+      "description": "Node 실행 환경",
+      "value": "production"
+    },
+    "MONGODB_ATLAS_URL": {
+      "description": "MongoDB Atlas 연결 문자열 (mongodb+srv://...)",
+      "required": true
+    },
+    "JWT_SECRET": {
+      "description": "JWT 서명용 비밀키",
+      "generator": "secret"
+    },
+    "JWT_EXPIRES_IN": {
+      "description": "JWT 만료 기간",
+      "value": "7d"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "scripts": {
+    "postdeploy": "echo 'Server deployed. Set VITE_API_URL on Vercel to https://$HEROKU_APP_NAME.herokuapp.com/api'"
+  }
+}
