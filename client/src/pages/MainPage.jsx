@@ -9,11 +9,9 @@ import { getProducts } from '../api/productApi'
 import PageShell from '../components/PageShell'
 import '../App.css'
 
-/* Bulbagarden 공식 애니 일러스트 (890px+, 투명 PNG) — PokeAPI 공식 아트와 유사한 선화 품질 */
-const JESSIE_ART =
-  'https://archives.bulbagarden.net/media/upload/0/0d/Jessie_JN.png'
-const JAMES_ART =
-  'https://archives.bulbagarden.net/media/upload/1/19/James_JN.png'
+/* 로컬 public 에셋 — Bulbagarden는 Vercel 등 외부 도메인 hotlink 차단 */
+const JESSIE_ART = '/jessie-jn.png'
+const JAMES_ART = '/james-jn.png'
 const MEOWTH_ART =
   'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png'
 
